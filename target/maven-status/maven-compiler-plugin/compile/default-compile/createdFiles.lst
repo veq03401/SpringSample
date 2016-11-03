@@ -1,1 +1,6 @@
+com/sample/controller/UserController$Form.class
+com/sample/controller/UserController.class
+com/sample/business/service/UserService.class
+com/sample/dao/UserDao.class
 com/controller/SampleController.class
+com/sample/business/model/User.class
