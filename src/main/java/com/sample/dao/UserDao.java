@@ -15,11 +15,11 @@ public class UserDao {
 	      user.setAge(21);
 	      SimpleDateFormat f =new SimpleDateFormat("yyyy/MM/dd");
 	      user.setUpDate(f.parse("2012/04/01"));
-	   } catch (ParseException e) {}
-	      return user;
+	   } catch (ParseException e) {   }
+	   return user;
 	   }
 	    
 	   public void updateUser(User user){
 	     //DBに値を更新する処理を書きます。ここでは省略。
 	   }
-	}
+}

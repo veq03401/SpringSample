@@ -1,4 +1,4 @@
-package com.controller;
+package com.sample.controller;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 import org.springframework.stereotype.Controller;
