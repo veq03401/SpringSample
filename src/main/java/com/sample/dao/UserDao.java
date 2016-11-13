@@ -8,6 +8,8 @@ import com.sample.business.model.User;
 //master2コメント2
 //master2コメント3
 //master1コメント
+//master3コメント1
+//master3コメント2
 public class UserDao {
 	 public User getUser(String id){
 	   //ここではハードコードしていますが、本当はDBから値を取得します。
