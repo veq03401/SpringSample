@@ -71,7 +71,7 @@ public class UserController {
   public String input(Form form) {
     System.out.println("■■■■input実行■■■■");
     //既にnewRequestでモデルをDBから取り出し、設定しているので何もする必要がない
-    return "user-Edit-Input";
+    return "UserInput/user-Edit-Input";
   }
  
   @RequestMapping(value="edit/confirm", method=RequestMethod.POST)
@@ -79,21 +79,21 @@ public class UserController {
     System.out.println("■■■■confirm実行■■■■");
     //@Validを指定したモデルは妥当性チェックが実行される。
     if(result.hasErrors()){
-      return "user-Edit-Input";
+      return "UserInput/user-Edit-Input";
     }
-    return "user-Edit-Confirm";
+    return "UserInput/user-Edit-Confirm";
   }
  
   @RequestMapping(value="edit/finish", method=RequestMethod.POST)
   public String finish(@Valid Form form, BindingResult result) throws Exception {
     System.out.println("■■■■finish実行■■■■");
     if(result.hasErrors()){
-      return "user-Edit-Input";
+      return "/UserInput/user-Edit-Input";
     }
   
     //データ更新
     this.userService.updateUser(form.user);
-    return "user-Edit-Finish";
+    return "/UserInput/user-Edit-Finish";
   }
  
  

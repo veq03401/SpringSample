@@ -4,14 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 import com.sample.business.model.User;
-//master2コメント1
-//master2コメント2
-//master2コメント3
-//master1コメント
-//master1コメント1
-//master1コメント2
-//master3コメント1
-//master3コメント2
+
 public class UserDao {
 	 public User getUser(String id){
 	   //ここではハードコードしていますが、本当はDBから値を取得します。

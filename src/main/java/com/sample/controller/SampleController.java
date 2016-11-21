@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class SampleController {
 
-    @RequestMapping(value = "/", method = GET)
+    @RequestMapping(value = "/HelloWorld", method = GET)
     public String show() {
         // jspのファイル名
-        return "test";
+        return "/HelloWorld/test";
     }
 }

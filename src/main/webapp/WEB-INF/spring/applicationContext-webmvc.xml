@@ -41,6 +41,11 @@
   <property name="defaultLocale" value="ja" />
  </bean>
  
+ <!-- SpringMVC静的リソースの設定 add 20161119 -->
+ <mvc:resources mapping="/resource/css/**" location="/resource/css/" />
+ <mvc:resources mapping="/resource/js/**" location="/resource/js/" />
+ <mvc:resources mapping="/resource/html/**" location="/resource/html/" />
+ 
  <!-- メッセージ -->
  <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"
   p:basenames="messages-spring" />
