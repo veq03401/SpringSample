@@ -34,7 +34,6 @@ public class SelectSampleController {
     //Form初期データの作成
     SelectSampleForm selectSampleForm = new SelectSampleForm();
     //デフォルト値を指定したければ setSelectedYear()で指定する。
-    //指定しなかった場合はyearの初期値がnullのため、nullの項目が明示的にSELECTタグのデフォルト値となる
     //selectSampleForm.setSelectedYear(1970);
     model.addAttribute("SelectForm",selectSampleForm);
     
@@ -42,13 +41,14 @@ public class SelectSampleController {
 	return "SelectSample/SelectSample";		
   }
 	
-	
+  //年代のJSONデータ返却
   @RequestMapping(value="/DecadeList", method=RequestMethod.GET)
   @ResponseBody
   public List<Decade> DecadeList() {
 	return findDecadeList();		
   }
-	
+
+  //担当のJSONデータ返却
   @RequestMapping(value="/PersonList", method=RequestMethod.GET)
   @ResponseBody
   public List<Person> jsonList() {
@@ -58,7 +58,6 @@ public class SelectSampleController {
   //DecadeListのデータ取得
   private List<Decade> findDecadeList() {
 	List<Decade> DecadeList = new ArrayList<Decade>();
-    DecadeList.add(new Decade());
     DecadeList.add(new Decade(1950,"1950年代"));
     DecadeList.add(new Decade(1960,"1960年代"));
     DecadeList.add(new Decade(1970,"1970年代"));
@@ -70,10 +69,12 @@ public class SelectSampleController {
 
   //personListのデータ取得
   private List<Person> findPersonList() {
-	    List<Person> personList = new ArrayList<Person>();
-	    for (int i = 0; i < 10; i++) {
-	      personList.add(new Person("test", i, new Date()));
-	    }
-	  return personList;
+    List<Person> personList = new ArrayList<Person>();
+    personList.add(new Person("001","misawa", 41, "1975/09/22"));
+    personList.add(new Person("002","kawada", 40, "1976/05/31"));
+    personList.add(new Person("003","taue", 49, "1967/12/04"));
+    personList.add(new Person("004","kobashi", 36, "1980/01/23"));
+	    
+	return personList;
   }
 }
