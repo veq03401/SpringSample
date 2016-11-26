@@ -25,6 +25,9 @@
 <ul class="nl">
   <li><a href="<%= request.getContextPath() %>/HelloWorld">HelloWorld!</a></li>
   <li><a href="<%= request.getContextPath() %>/user/edit/input.html?user.id=001">画面入力・バリデーションサンプル</a></li>
+  <li><a href="<%= request.getContextPath() %>/SelectSample/init">JSONデータ取得</a></li>
+  <li><a href="<%= request.getContextPath() %>/SelectSample/DecadeList">JSONデータ取得</a></li>
+  <li><a href="<%= request.getContextPath() %>/SelectSample/PersonList">JSONデータ取得</a></li>
 </ul>
 
 </div>

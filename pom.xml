@@ -44,6 +44,18 @@
       <version>1.2</version>
     </dependency>
 
+   <!-- 20161121 add JSONデータ利用のため-->
+   <dependency>
+    <groupId>org.codehaus.jackson</groupId>
+    <artifactId>jackson-core-asl</artifactId>
+    <version>1.9.13</version>
+   </dependency>
+   <dependency>
+    <groupId>org.codehaus.jackson</groupId>
+    <artifactId>jackson-mapper-asl</artifactId>
+    <version>1.9.13</version>
+   </dependency>
+
   </dependencies>
   <!-- add -->
 </project>
