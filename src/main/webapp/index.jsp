@@ -28,6 +28,7 @@
   <li><a href="<%= request.getContextPath() %>/SelectSample/init">JSONデータ取得</a></li>
   <li><a href="<%= request.getContextPath() %>/SelectSample/DecadeList">JSONデータ取得</a></li>
   <li><a href="<%= request.getContextPath() %>/SelectSample/PersonList">JSONデータ取得</a></li>
+  <li><a href="<%= request.getContextPath() %>/services/HelloService?WSDL">HelloServiceのWSDL</a></li>
 </ul>
 
 </div>

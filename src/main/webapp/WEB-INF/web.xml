@@ -50,4 +50,12 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
   <!--  add  -->
+  <servlet>
+    <servlet-name>HelloService</servlet-name>
+    <servlet-class>com.sample.webservice.HelloService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloService</servlet-name>
+    <url-pattern>/services/HelloService</url-pattern>
+  </servlet-mapping>
 </web-app>
